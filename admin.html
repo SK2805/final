@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <button id="logoutButton">Logout</button>
+    </header>
+    <main>
+        <h2>Catalog</h2>
+        <ul id="catalogList"></ul>
+
+        <h2>Add a New Book</h2>
+        <form id="addBookForm">
+            <input type="text" id="bookTitle" placeholder="Book Title" required>
+            <input type="text" id="bookAuthor" placeholder="Book Author" required>
+            <button type="submit">Add Book</button>
+        </form>
+
+        <h2>All Borrowed Books</h2>
+        <ul id="adminBorrowedList"></ul>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Library Management System</p>
+    </footer>
+    <script src="js/admin.js"></script>
+</body>
+</html>
